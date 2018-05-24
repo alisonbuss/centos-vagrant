@@ -1,0 +1,31 @@
+[
+    {
+        "cluster": "centos-servers",
+        "description": "CentOS Servers, for system analysis and testing",
+        "active": true,
+        "machines": [
+            {
+                "hostname": "centos01",
+                "domain": "virtual.com",
+                "box": "centos/7",
+                "cpus": 1,              
+                "memory": 768,
+                "public_network": true,
+                "ip_address_static": "192.168.22.11",
+                "interface": "enp0s8",
+                "active": true
+            },
+            {
+                "hostname": "centos02",
+                "domain": "virtual.com",
+                "box": "centos/7",
+                "cpus": 1,              
+                "memory": 768,
+                "public_network": false,
+                "ip_address_static": "192.168.22.12",
+                "interface": "enp0s8",
+                "active": true
+            }
+        ]
+    }
+]
